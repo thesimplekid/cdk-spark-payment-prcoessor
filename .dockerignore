@@ -1,0 +1,31 @@
+# Rust build artifacts
+target/
+
+# Git internals
+.git/
+.gitignore
+
+# Config files with secrets (never bake into image)
+config.toml
+*.db
+
+# TLS private keys / certs
+*.key
+*.pem
+*.crt
+certs/
+
+# Nix
+.direnv/
+result
+result-*
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# CI
+.github/
